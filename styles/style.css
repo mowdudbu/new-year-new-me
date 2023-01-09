@@ -167,40 +167,60 @@ li {
 }
 
 /* Contact-Area */
-
 .contact {
-    padding: 80px;
     background-color: #151414;
-    height: 300px;
     color: #fff;
+    padding: 20px 30px;
+    /* height: 500px; */
+
 }
-.contact-area {
+.contact-details {
     width: 90%;
     height: auto;
-    display: flex;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
+.detail {
+    width: 49%;
+    height: auto;
+}
+.contact-title {
+    font-size: 35px;
+    /* padding: 15px auto; */
+}
+.detail p:nth-child(1) {
+    
+}
+.detail p:nth-child(2) {}
+.detail p:nth-child(3) {}
 .contact-icon {
     display: flex;
 }
-
-.contact-icon img {
-    width: 40px;
-    height: 40px;
+.contact {
     
 }
-
-.contact-detail, .contact-form {
-    /* width: 49%; */
-    /* height: 49%; */
-    
+.form {
+    width: 30%;
+    margin: 0 auto;
 }
-.contact-detail h3 {
-    font-size: 30px;
-}
-.contact-detail p {
-    margin-top: 10px;
+h3 {
+    margin-bottom: 10px;
 }
 input[type=email] {
-    margin: 15px 0;
+    color: gray;
+    background-color: #151414;
+    border: 1px solid gray;
+    padding: 15px 30px;
+    font-size: 14px;
+}
+input[type=submit] {
+    margin-top: 10px;
+    color:#fc5e03;
+    background-color: #fff;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    
 }
