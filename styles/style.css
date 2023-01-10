@@ -1,14 +1,15 @@
 
-/* Common Design */
+/* Common Style */
 
 * {
     margin: 0;
-    padding: 0;
     font-family: 'Work Sans', sans-serif;
 }
+
 a {
     text-decoration: none;  
 }
+
 img {
     width: 100%;
     height: auto;
@@ -21,12 +22,14 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100vh;   
 }
-.header {  
+.header {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
     text-align: right;
-    margin-right: 150px;
-    padding-top: 150px;   
+    padding-top: 250px;     
 }
 h1 {   
     color: #151414;
@@ -49,26 +52,31 @@ h1 {
     font-size: 15px;
     font-weight: 700;
 }
+.btn-1 a:hover {
+    background-color: green;
+}
 
 /* feature-area */
 
-.about-failure, .my-plans {
+.feature {
+    padding: 80px 0 0;
+}
+.about-failure { 
     width: 90%;
-    height: 720px;
-    margin: 0 230px 100px;
+    height: auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;   
 }
 .my-photo, .my-failure {
-    width: 49%;
-    height: 49%;
-    align-items: center;
+    width: 40%;
+    height: 40%;
 }
 .my-photo {
     margin: 0 auto;
 }
 .my-failure {
-    margin-top: 300px;
+    margin-top: 200px;
     text-align: left;
 }
 .failure-detail{
@@ -88,30 +96,31 @@ li {
 
 /* All-Plans */
 
+.my-plans {
+    padding: 80px 0;
+}
 .plan-area {
     width: 90%;
     height: auto;
-
+    margin: 0 auto;
 }
-.plan {
-    width: 20%;
-    height: 300px;
-}
-
-.my-plans {
-    height: 300px;
-}
-.my-plans h2, .my-plans p, .my-plans img {
-    display: block;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-    
+.plan-area h2 {
+    font-size: 28px;
+    text-align: center;
+    padding: 30px 0;
 }
 .all-plan {
-    margin-top: 100px;
     display: flex;
     justify-content: space-between;
+}
+.plan {
+    text-align: center;    
+    box-sizing: border-box;  
+}
+
+.plan img {
+    width: 80px;
+    height: 80px;
 }
 .plan-title {
     margin: 20px 0;
@@ -120,66 +129,56 @@ li {
 .plan-detail {
     color: #444343   
 }
-.plan {
-    margin: 0 auto;
-    align-items: center;
-}
-.plan img {
-    width: 50px;
-    height: 50px;
-    margin: 0 auto;
-}
 
 /* Promotional-Area */
 
 .promotion {
-    margin: 100px 0;
-    padding: 150px 0;
-    height: 300px;    
-    padding-left: 20px;
-}
-.promo-title {
-    font-size: 24px;
-    text-align: left;
-}
-.btn-2 {
- display: inline-block;
-
-}
-.btn-2 a {
-    display: block;
-    background-color: #fff;
-    color: #fc5e03;
-    padding: 18px 22px;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: 700;
-    
+    padding: 80px 100px;   
 }
 .promotion-area {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
     background-image: url('../images/gradient2.png'),url(../images/watch.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 90%;
-    height: 200px;
-    margin: 0 auto;
+    border-radius: 8px;
+}
+.promo-text {
+    padding: 80px;
+    align-items: left;      
+}
+.promo-title {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.promo-title h2 {
+    color: #fff;
+}
+.btn-2 {}
+.btn-2 a {
+    background-color: #fff;
+    color: #fc5e03;
+    padding: 18px 30px;
+    border-radius: 8px;
+    font-size: 25px;
+    font-weight: 400;   
 }
 
 /* Contact-Area */
+
 .contact {
     background-color: #151414;
     color: #fff;
-    padding: 20px 30px;
-    /* height: 500px; */
-
+    padding: 80px 30px 40px;
 }
 .contact-details {
     width: 90%;
     height: auto;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    gap: 50%;
 }
 .detail {
     width: 49%;
@@ -187,32 +186,43 @@ li {
 }
 .contact-title {
     font-size: 35px;
-    /* padding: 15px auto; */
+    margin-bottom: 20px;
 }
-.detail p:nth-child(1) {
-    
+.detail p{
+    font-size: 12px;
+    color: gray;
 }
-.detail p:nth-child(2) {}
-.detail p:nth-child(3) {}
+.detail p:first-child(1) {}
+.detail p:nth-child(2) {
+    margin: 15px 0;
+}
+.detail p:nth-child(3) {
+    margin: 15px 0;
+}
 .contact-icon {
     display: flex;
+    margin-top: 15px;    
 }
-.contact {
-    
+.icon {
+    width: 25px;
+    height: 25px;
+    padding: 0 5px;   
 }
 .form {
     width: 30%;
-    margin: 0 auto;
 }
-h3 {
-    margin-bottom: 10px;
+.form-title {
+    margin-bottom: 15px;
 }
 input[type=email] {
-    color: gray;
+    color: #fff;
     background-color: #151414;
     border: 1px solid gray;
     padding: 15px 30px;
     font-size: 14px;
+    font-weight: 400;
+    border-radius: 8px;
+    width: 100%;
 }
 input[type=submit] {
     margin-top: 10px;
@@ -221,6 +231,10 @@ input[type=submit] {
     padding: 12px 25px;
     font-size: 16px;
     border-radius: 8px;
-    cursor: pointer;
-    
+    cursor: pointer;    
+}
+.copyright {
+    padding: 15px 0;
+    text-align: center;
+    font-size: 12px;
 }
