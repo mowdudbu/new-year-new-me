@@ -90,8 +90,7 @@ li {
     font-weight: 400;
     color: #444343;
     font-size: 14px;
-    margin-bottom: 7px;
-    
+    margin-bottom: 7px;   
 }
 
 /* All-Plans */
@@ -114,8 +113,8 @@ li {
     justify-content: space-between;
 }
 .plan {
-    text-align: center;    
-    box-sizing: border-box;  
+    width: 23.5%;
+    text-align: center;        
 }
 
 .plan img {
@@ -135,12 +134,12 @@ li {
 .promotion {
     padding: 80px 100px;   
 }
-.promotion-area {
+.promotion-area {  
     width: 90%;
     height: auto;
     margin: 0 auto;
     background-image: url('../images/gradient2.png'),url(../images/watch.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-size: cover;
     background-position: center;
     border-radius: 8px;
